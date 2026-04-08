@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.cafezinho</groupId>
     <artifactId>automatizado</artifactId>
-    <packaging>jar</packaging>
+    <packaging>jar</packaging><build><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><configuration><source>8</source><target>8</target></configuration></plugin></plugins></build>
     <version>1.0-SNAPSHOT</version>
     <name>automatizado</name>
     <url>http://maven.apache.org</url>
@@ -28,14 +28,14 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.27.0</version>
+            <version>4.28.0</version>
         </dependency>
 
         <!-- Dependência de ferramentas de suporte para selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>4.27.0</version>
+            <version>4.28.0</version>
         </dependency>
 
     </dependencies>

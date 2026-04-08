@@ -1,7 +1,9 @@
 package automatizado.test;
 
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleTeste {
@@ -19,6 +21,8 @@ public class GoogleTeste {
     @Test
     public void devePesquisarNoGoogle() {
         iniciar();
+
+       WebElement inputPesquisa = driver.findElement(By.name("q"));
 
     }
 }
