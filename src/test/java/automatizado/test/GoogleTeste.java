@@ -2,9 +2,12 @@ package automatizado.test;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
 
 public class GoogleTeste {
     private WebDriver driver;
@@ -16,6 +19,7 @@ public class GoogleTeste {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(URL_BASE);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test
@@ -23,6 +27,7 @@ public class GoogleTeste {
         iniciar();
 
        WebElement inputPesquisa = driver.findElement(By.name("q"));
+       inputPesquisa.sendKeys("Cafezinho é vida" + Keys.ENTER);
 
     }
 }
