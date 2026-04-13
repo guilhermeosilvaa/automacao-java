@@ -43,7 +43,7 @@ public class checkBox {
 
         driver.findElement(By.cssSelector("div:nth-child(4) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
 
-        // driver.findElement(By.cssSelector("div:nth-child(5) > span.rc-tree-switcher.rc-tree-switcher_open")).click();
+        driver.findElement(By.cssSelector("div:nth-child(10) > span.rc-tree-switcher.rc-tree-switcher_open")).click();
 
        // driver.findElement(By.cssSelector("div:nth-child(8) > span.rc-tree-switcher.rc-tree-switcher_open")).click();
 
