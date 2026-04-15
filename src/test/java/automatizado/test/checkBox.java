@@ -7,12 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-
 public class checkBox {
 
     private WebDriver driver;
     private final String URL_BASE = "https://demoqa.com/";
-    private final String CAMINHO_DRIVE = "C:\\Users\\guilherme.doliveira\\Documents\\automacao-java\\src\\test\\java\\automatizado\\resource\\chromedriver.exe";
+    private final String CAMINHO_DRIVE = "C:\\Users\\guilh\\Documents\\automacao-java\\automatizado\\src\\test\\java\\automatizado\\resource\\chromedriver.exe";
 
     private void iniciar() {
         System.setProperty("webdriver.chrome.driver", CAMINHO_DRIVE);
@@ -45,8 +44,7 @@ public class checkBox {
 
         driver.findElement(By.cssSelector("div:nth-child(10) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
 
-        driver.findElement(By.cssSelector("div:nth-child(15) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
-
+        // driver.findElement(By.cssSelector("div:nth-child(15) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
 
 
     }

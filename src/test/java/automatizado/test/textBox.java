@@ -11,7 +11,7 @@ import java.time.Duration;
 public class textBox {
     private WebDriver driver;
     private final String URL_BASE = "https://demoqa.com/";
-    private final String CAMINHO_DRIVE = "C:\\Users\\guilherme.doliveira\\Documents\\automacao-java\\src\\test\\java\\automatizado\\resource\\chromedriver.exe";
+    private final String CAMINHO_DRIVE = "C:\\Users\\guilh\\Documents\\automacao-java\\automatizado\\src\\test\\java\\automatizado\\resource\\chromedriver.exe";
 
     private void iniciar() {
         System.setProperty("webdriver.chrome.driver", CAMINHO_DRIVE);
@@ -33,13 +33,13 @@ public class textBox {
 
         driver.findElement(By.cssSelector(".router-link")).click();
 
-        driver.findElement(By.id("userName")).sendKeys("Allison");
+        driver.findElement(By.id("userName")).sendKeys("Guilherme Oliveira");
 
-        driver.findElement(By.id("userEmail")).sendKeys("allison123@gmail.com");
+        driver.findElement(By.id("userEmail")).sendKeys("Guilhermeoliveira@gmail.com");
 
         driver.findElement(By.id("currentAddress")).sendKeys("Texto aqui");
 
-        driver.findElement(By.id("permanentAddress")).sendKeys("Rua Social 45");
+        driver.findElement(By.id("permanentAddress")).sendKeys("Rua teste 123");
 
         driver.findElement(By.id("submit")).click();
 
