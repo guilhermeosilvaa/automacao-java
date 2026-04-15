@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
+import static org.junit.Assert.assertTrue;
+
 public class textBox {
     private WebDriver driver;
     private final String URL_BASE = "https://demoqa.com/";
@@ -37,13 +39,29 @@ public class textBox {
 
         driver.findElement(By.id("userEmail")).sendKeys("Guilhermeoliveira@gmail.com");
 
-        driver.findElement(By.id("currentAddress")).sendKeys("Texto aqui");
+        driver.findElement(By.id("currentAddress")).sendKeys("Endereço Atual 123");
 
-        driver.findElement(By.id("permanentAddress")).sendKeys("Rua teste 123");
+        driver.findElement(By.id("permanentAddress")).sendKeys("Endereço Permanente 123");
 
         driver.findElement(By.id("submit")).click();
 
+        driver.findElement(By.id("name"));
+        String validarNome = driver.findElement(By.id("name")).getText();
+        assertTrue(validarNome, validarNome.contains("Guilherme Oliveira"));
 
+        driver.findElement(By.id("email"));
+        String validarEmail = driver.findElement(By.id("email")).getText();
+        assertTrue(validarEmail, validarEmail.contains("Guilhermeoliveira@gmail.com"));
+
+        driver.findElement(By.id("currentAddress"));
+        String validarEndereco = driver.findElement(By.id("currentAddress")).getText();
+        assertTrue(validarEndereco, validarEndereco.contains("Endereço Atual 123"));
+
+        driver.findElement(By.id("permanentAddress"));
+        String validarEnderecoPermanente = driver.findElement(By.id("permanentAddress")).getText();
+        assertTrue(validarEnderecoPermanente, validarEnderecoPermanente.contains("Endereço Permanente 123"));
+
+        driver.quit();
 
 
     }
