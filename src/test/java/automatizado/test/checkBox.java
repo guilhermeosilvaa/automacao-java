@@ -40,8 +40,6 @@ public class checkBox {
 
         driver.findElement(By.cssSelector("div:nth-child(6) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
 
-        driver.findElement(By.cssSelector("div:nth-child(4) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
-
         driver.findElement(By.cssSelector("div:nth-child(10) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
 
         // driver.findElement(By.cssSelector("div:nth-child(15) > span.rc-tree-switcher.rc-tree-switcher_close")).click();
